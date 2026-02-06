@@ -20,6 +20,7 @@
 # Thomas <thovi98@gmail.com>, 2021
 # DeadBone <deadbone2000@yahoo.fr>, 2025
 # Tex <tex@grosist.fr>, 2025
+# Druss67 <fouquetre@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: Calibre-Web Automated\n"
@@ -43,7 +44,7 @@ msgstr "Statistiques"
 
 #: cps/admin.py:128
 msgid "Calibre database unavailable. Please reconfigure the library path."
-msgstr ""
+msgstr "Base de données Calibre indisponible. Veuillez reconfigurer le chemin de la bibliothèque."
 
 #: cps/admin.py:180
 msgid "Server restarted, please reload page."
@@ -112,12 +113,12 @@ msgstr "Correspond à %(action)s"
 
 #: cps/admin.py:439
 msgid "No pending matches to reject"
-msgstr ""
+msgstr "Aucune correspondance en attente à rejeter"
 
 #: cps/admin.py:445
 #, python-format
 msgid "Rejected %(count)s match(es)"
-msgstr ""
+msgstr "%(count)s correspondance(s) rejetée(s)"
 
 #: cps/admin.py:482
 #, python-brace-format
@@ -824,17 +825,17 @@ msgstr "Échec de la connexion : %(error)s"
 
 #: cps/admin.py:2975
 msgid "Restore failed: Calibre library path is not configured."
-msgstr ""
+msgstr "Échec de la restauration : le chemin de la bibliothèque Calibre n’est pas configuré."
 
 #: cps/admin.py:2980
 #, python-format
 msgid "Restore failed: metadata.db not found at %(path)s"
-msgstr ""
+msgstr "Échec de la restauration : metadata.db introuvable à l’emplacement %(path)s"
 
 #: cps/admin.py:2985
 #, python-format
 msgid "Restore failed: app.db not found at %(path)s"
-msgstr ""
+msgstr "Échec de la restauration : app.db introuvable à l’emplacement %(path)s"
 
 #: cps/admin.py:3057 cps/admin.py:3097
 #, fuzzy, python-format
@@ -843,14 +844,14 @@ msgstr "Échec de la connexion : %(error)s"
 
 #: cps/admin.py:3074
 msgid "Restore completed but app.db cleanup failed. See logs for details."
-msgstr ""
+msgstr "Restauration terminée, mais le nettoyage de app.db a échoué. Consultez les journaux pour plus de détails."
 
 #: cps/admin.py:3093
 #, python-format
 msgid ""
 "Restore complete. Backups and restore log saved to %(dir)s. All book-linked "
 "data was reset."
-msgstr ""
+msgstr "Restauration terminée. Les sauvegardes et le journal de restauration ont été enregistrés dans %(dir)s. Toutes les données liées aux livres ont été réinitialisées."
 
 #: cps/constants.py:207
 msgid "Czech"
@@ -1124,7 +1125,7 @@ msgstr "Calibre-Web Automated - Service de correction EPUB Send-to-Kindle"
 
 #: cps/cwa_functions.py:2031
 msgid "Single-book EPUB Fixer is not supported with Google Drive libraries."
-msgstr ""
+msgstr "Le correcteur EPUB sur un seul livre n’est pas pris en charge avec les bibliothèques Google Drive."
 
 #: cps/cwa_functions.py:2038
 #, fuzzy
@@ -1153,7 +1154,7 @@ msgstr "Editer les livres sélectionnés"
 
 #: cps/cwa_functions.py:2072
 msgid "Failed to start EPUB Fixer for selected book."
-msgstr ""
+msgstr "Impossible de démarrer le correcteur EPUB pour le livre sélectionné."
 
 #: cps/cwa_functions.py:2119
 msgid "You must be an admin to access this page."
@@ -1244,7 +1245,7 @@ msgstr "Stratégie de résolution non valide"
 msgid ""
 "Ingest folder is not writable. Check your /cwa-book-ingest volume "
 "permissions."
-msgstr ""
+msgstr "Le dossier d’ingestion n’est pas accessible en écriture. Vérifiez les permissions du volume /cwa-book-ingest."
 
 #: cps/editbooks.py:121
 msgid "Missing or invalid book id for format upload"
@@ -1554,7 +1555,7 @@ msgstr ""
 #: cps/helper.py:1053 cps/helper.py:1061
 #, python-format
 msgid "Cover image exceeds maximum size of %(size)s MB"
-msgstr ""
+msgstr "L’image de couverture dépasse la taille maximale de %(size)s Mo"
 
 #: cps/helper.py:1072
 msgid "Error Downloading Cover"
@@ -3307,7 +3308,7 @@ msgstr "Rechercher le mot-clé"
 
 #: cps/templates/book_edit.html:282
 msgid "Selected metadata fields were applied to the edit form."
-msgstr ""
+msgstr "Les champs de métadonnées sélectionnés ont été appliqués au formulaire d’édition."
 
 #: cps/templates/book_edit.html:288 cps/templates/book_edit.html:368
 msgid "Loading..."
@@ -3654,7 +3655,7 @@ msgid ""
 "the app database, but will not affect user accounts or settings. <b>Both "
 "databases will be automatically backed up in /config/backup before any "
 "destructive action.</b> A restore log will be saved alongside the backups."
-msgstr ""
+msgstr "Si votre bibliothèque Calibre est corrompue et ne peut pas être ouverte, vous pouvez tenter de la restaurer à partir des fichiers OPF de votre bibliothèque. Cela <b>effacera toutes les données propres à chaque livre</b> (progression de lecture, favoris, liens d’étagères, téléchargements, etc.) dans la base de données de l’application, sans affecter les comptes utilisateurs ni les paramètres. <b>Les deux bases de données seront automatiquement sauvegardées dans /config/backup avant toute action destructrice.</b> Un journal de restauration sera enregistré à côté des sauvegardes."
 
 #: cps/templates/config_db.html:121
 #, fuzzy
@@ -4488,11 +4489,11 @@ msgstr "Erreur de planification Convertir la bibliothèque"
 
 #: cps/templates/cwa_epub_fixer.html:22
 msgid "Run on a single book"
-msgstr ""
+msgstr "Exécuter sur un seul livre"
 
 #: cps/templates/cwa_epub_fixer.html:24
 msgid "Search by title/author"
-msgstr ""
+msgstr "Rechercher par titre/auteur"
 
 #: cps/templates/cwa_epub_fixer.html:29
 #, fuzzy
@@ -4626,14 +4627,14 @@ msgid ""
 "When enabled, CWA exposes the /kosync endpoints and stores KOReader-"
 "compatible checksums in metadata.db for progress syncing. Requires the "
 "KOReader plugin on your device."
-msgstr ""
+msgstr "Lorsqu’il est activé, CWA expose les points de terminaison /kosync et stocke dans metadata.db des sommes de contrôle compatibles KOReader pour la synchronisation de la progression. Nécessite le plugin KOReader sur votre appareil."
 
 #: cps/templates/cwa_settings.html:185
 msgid ""
 "Note: Enabling this starts a checksum backfill service at startup which can "
 "temporarily lock metadata.db. To stop a running backfill, restart the "
 "container after disabling."
-msgstr ""
+msgstr "Remarque : l’activation lance au démarrage un service de complétion des sommes de contrôle, ce qui peut verrouiller temporairement metadata.db. Pour arrêter une complétion en cours, redémarrez le conteneur après avoir désactivé l’option."
 
 #: cps/templates/cwa_settings.html:192
 msgid "Enable Aggressive EPUB Fixer Mode (riskier)"
@@ -4852,7 +4853,7 @@ msgstr ""
 
 #: cps/templates/cwa_settings.html:403
 msgid "Cover File Max Size (MB):"
-msgstr ""
+msgstr "Taille max. du fichier de couverture (Mo) :"
 
 #: cps/templates/cwa_settings.html:416
 #, fuzzy
@@ -4863,7 +4864,7 @@ msgstr "Plage: 5-120 minutes (par défaut: 15)"
 msgid ""
 "Limits the maximum size of cover images downloaded from metadata providers "
 "or URLs to prevent slow or stalled saves."
-msgstr ""
+msgstr "Limite la taille maximale des images de couverture téléchargées depuis des fournisseurs de métadonnées ou des URL afin d’éviter des enregistrements lents ou bloqués."
 
 #: cps/templates/cwa_settings.html:428
 msgid "Ingest Processing Timeout"
@@ -5735,31 +5736,31 @@ msgstr "Livre %(index)s sur %(range)s"
 
 #: cps/templates/detail.html:664
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: cps/templates/detail.html:669
 msgid "UUID"
-msgstr ""
+msgstr "UUID"
 
 #: cps/templates/detail.html:672
 msgid "UUID copied to clipboard"
-msgstr ""
+msgstr "UUID copié dans le presse-papiers"
 
 #: cps/templates/detail.html:673
 msgid "Unable to copy UUID"
-msgstr ""
+msgstr "Impossible de copier l’UUID"
 
 #: cps/templates/detail.html:674 cps/templates/detail.html:675
 msgid "Copy UUID"
-msgstr ""
+msgstr "Copier l’UUID"
 
 #: cps/templates/detail.html:680
 msgid "Date added"
-msgstr ""
+msgstr "Date d’ajout"
 
 #: cps/templates/detail.html:684
 msgid "Last modified"
-msgstr ""
+msgstr "Dernière modification"
 
 #: cps/templates/detail.html:689
 #, fuzzy
@@ -5774,7 +5775,7 @@ msgstr "Supprimer"
 #: cps/templates/detail.html:741 cps/templates/detail.html:742
 #: cps/templates/detail.html:1166
 msgid "Add tag"
-msgstr ""
+msgstr "Ajouter une étiquette"
 
 #: cps/templates/detail.html:787 cps/templates/listenmp3.html:111
 msgid "Published"
@@ -5814,11 +5815,11 @@ msgstr "Choisissez l'adresse de courriel:"
 
 #: cps/templates/detail.html:919
 msgid "example@domain.com, another@domain.com"
-msgstr ""
+msgstr "exemple@domaine.com, autre@domaine.com"
 
 #: cps/templates/detail.html:920
 msgid "Enter one or more email addresses separated by commas"
-msgstr ""
+msgstr "Saisissez une ou plusieurs adresses e-mail séparées par des virgules"
 
 #: cps/templates/detail.html:925
 msgid "Select format:"
@@ -6089,7 +6090,7 @@ msgstr "Suivant"
 
 #: cps/templates/feed.xml:83
 msgid "(Magic)"
-msgstr ""
+msgstr "(Magique)"
 
 #: cps/templates/generate_kobo_auth_url.html:6
 msgid ""
@@ -6360,7 +6361,7 @@ msgstr "La connexion standard est désactivée."
 msgid ""
 "Enable it in CWA Settings to activate the /kosync endpoints and checksum "
 "generation."
-msgstr ""
+msgstr "Activez-le dans les paramètres CWA pour activer les points de terminaison /kosync et la génération de sommes de contrôle."
 
 #: cps/templates/kosync_plugin.html:115
 #, fuzzy
@@ -6369,7 +6370,7 @@ msgstr "Paramètres de CWA"
 
 #: cps/templates/kosync_plugin.html:139
 msgid "Download is available after enabling KOReader Sync in CWA Settings."
-msgstr ""
+msgstr "Le téléchargement est disponible après avoir activé la synchronisation KOReader dans les paramètres CWA."
 
 #: cps/templates/layout.html:93 cps/templates/login.html:51
 msgid "Home"
@@ -7188,14 +7189,14 @@ msgstr ""
 
 #: cps/templates/user_edit.html:228
 msgid "Enable Send-to-eReader Pop-up Modal"
-msgstr ""
+msgstr "Activer la fenêtre modale d’envoi vers eReader"
 
 #: cps/templates/user_edit.html:230
 msgid ""
 "Enables or disables the Send-to-eReader Pop-up Modal that allows users to "
 "enter extra email addresses and only send to a selection of saved addresses "
 "when sending to eReader."
-msgstr ""
+msgstr "Active ou désactive la fenêtre modale d’envoi vers eReader, qui permet aux utilisateurs de saisir des adresses e-mail supplémentaires et, lors de l’envoi vers l’eReader, de n’envoyer qu’à une sélection d’adresses enregistrées."
 
 #: cps/templates/user_edit.html:232
 #, fuzzy
@@ -7304,19 +7305,19 @@ msgstr "Ajouter les valeurs de colonnes personnalisées autorisées/refusées"
 
 #: cps/templates/user_edit.html:380
 msgid "OPDS Catalog Order"
-msgstr ""
+msgstr "Ordre du catalogue OPDS"
 
 #: cps/templates/user_edit.html:381
 msgid ""
 "Reorder the OPDS root catalog by listing entry IDs in the order you want. "
 "Unknown IDs are ignored and missing entries are appended automatically."
-msgstr ""
+msgstr "Réordonnez le catalogue racine OPDS en listant les ID d’entrée dans l’ordre souhaité. Les ID inconnus sont ignorés et les entrées manquantes sont ajoutées automatiquement."
 
 #: cps/templates/user_edit.html:389
 msgid ""
 "Drag to reorder OPDS root entries. Missing entries are appended "
 "automatically."
-msgstr ""
+msgstr "Glissez pour réordonner les entrées racines OPDS. Les entrées manquantes sont ajoutées automatiquement."
 
 #: cps/templates/user_edit.html:398
 #, fuzzy
@@ -7325,7 +7326,7 @@ msgstr "Permissions"
 
 #: cps/templates/user_edit.html:399
 msgid "Configure what actions this user is allowed to perform."
-msgstr ""
+msgstr "Configurez les actions que cet utilisateur est autorisé à effectuer."
 
 #: cps/templates/user_edit.html:454
 #, fuzzy
@@ -7334,39 +7335,39 @@ msgstr "Étagères magiques ✨"
 
 #: cps/templates/user_edit.html:455
 msgid "Choose how your magic shelves are ordered in the sidebar."
-msgstr ""
+msgstr "Choisissez l’ordre d’affichage de vos étagères magiques dans la barre latérale."
 
 #: cps/templates/user_edit.html:459
 msgid "Order Mode"
-msgstr ""
+msgstr "Mode de tri"
 
 #: cps/templates/user_edit.html:461
 msgid "Manual (drag to reorder)"
-msgstr ""
+msgstr "Manuel (glisser pour réordonner)"
 
 #: cps/templates/user_edit.html:462
 msgid "Name (A-Z)"
-msgstr ""
+msgstr "Nom (A-Z)"
 
 #: cps/templates/user_edit.html:463
 msgid "Name (Z-A)"
-msgstr ""
+msgstr "Nom (Z-A)"
 
 #: cps/templates/user_edit.html:464
 msgid "Book count (high to low)"
-msgstr ""
+msgstr "Nombre de livres (du plus au moins)"
 
 #: cps/templates/user_edit.html:465
 msgid "Book count (low to high)"
-msgstr ""
+msgstr "Nombre de livres (du moins au plus)"
 
 #: cps/templates/user_edit.html:466
 msgid "Created (newest first)"
-msgstr ""
+msgstr "Créé (les plus récents d’abord)"
 
 #: cps/templates/user_edit.html:467
 msgid "Created (oldest first)"
-msgstr ""
+msgstr "Créé (les plus anciens d’abord)"
 
 #: cps/templates/user_edit.html:468
 #, fuzzy
@@ -7375,11 +7376,11 @@ msgstr "Livres récents ajoutés"
 
 #: cps/templates/user_edit.html:469
 msgid "Least recently modified"
-msgstr ""
+msgstr "Les moins récemment modifiés"
 
 #: cps/templates/user_edit.html:480
 msgid "Manual order is used only when the order mode is set to Manual."
-msgstr ""
+msgstr "L’ordre manuel est utilisé uniquement lorsque le mode de tri est défini sur Manuel."
 
 #: cps/templates/user_edit.html:486
 #, fuzzy
@@ -7425,7 +7426,7 @@ msgstr "Générer l'URL d'authentification Kobo"
 
 #: cps/templates/user_edit.html:631
 msgid "Visible"
-msgstr ""
+msgstr "Visible"
 
 #: cps/templates/user_table.html:80 cps/templates/user_table.html:103
 msgid "Select..."
